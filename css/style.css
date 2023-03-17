@@ -1,0 +1,43 @@
+/* animation css */
+@font-face {
+    font-family: 'hasib';
+    src: url('../font/ethnocentric\ rg\ it.otf') format('opentype');
+}
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@font-face {
+    font-family: 'VT323';
+    src: url('../font/VT323-Regular.ttf');
+}
+body {
+    background-color: black;
+    color: red;
+    font-family: 'hasib';
+}
+#text-animation {
+    font-size: 24px;
+    font-family: 'VT323';
+    text-align: center;
+    padding: 20px;
+    /* border: 1px solid black; */
+    display: inline-block;
+}
+.title h1 {
+    font-size: 3em;
+    text-align: center;
+    color: rgb(177, 45, 45);
+}
+
+#text-animation .cursor {
+    display: inline-block;
+    width: 2px;
+    height: 20px;
+    margin-left: 5px;
+    background-color: black;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
